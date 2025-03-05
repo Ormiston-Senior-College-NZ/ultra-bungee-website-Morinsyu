@@ -1,9 +1,15 @@
 /* fonts */
-
-
+@import url('https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /* site colour palette */
 :root {
-    --color: 
+    --Primary: #2B4162;
+    --Magnolia: #F5F0F6;
+    --Second: #8F754F;
+    --Ecru: #D7B377;
 }
 
 
@@ -15,3 +21,44 @@
 }
 
 /* add your own style rules here */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.intro-block a{
+    display: inline-block;
+}
+
+.button {
+color: #2B4162;
+font-size: 19px;
+margin: 30px 5px;
+padding: 15px 15px;
+border: 2px solid #2B4162;
+min-width: 150px;
+}
+
+.hero-img {
+    width: 800px
+}
+
+#intro {
+    background: black url(../img/ultra-bungee-hero.jpg) 
+    no-repeat center;
+    background-size: cover;
+    padding-bottom: 60px;
+    padding-top: 250px;
+}

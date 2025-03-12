@@ -28,13 +28,14 @@
 }
 
 body {
-  font-family:Verdana;
+  font-family: "DM Sans";
 }
-
+ 
 nav{
-    background: #2B4162;
     width: 100%;
     height: 80px;
+    background: #2B4162;
+    font-family: "Roboto flex";
 }
 
 .hero-img{
@@ -44,14 +45,16 @@ nav{
 }
 
 nav ul{
+   margin-right: 23px;
    float: right; 
-   margin-right: 20px;
 }
 
 nav ul li{
-    display: inline-block;
     line-height: 80px;
-    margin: 0 10px;
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+    position: relative;
 }
 
 nav ul li a{
@@ -60,26 +63,43 @@ nav ul li a{
     text-transform: uppercase;
 }
 
+nav ul li::after{
+    content:'';
+    height: 3px;
+    width:0;
+    background: #D7B377;
+    position: absolute;
+    left: 0;
+    bottom: 28px;
+    transition: 0.5s;
+    
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
 section{
+    height: 100vh;
+    padding-top: 60vh;
     background: url(../img/ultra-bungee-hero.jpg) no-repeat;
     background-size: cover;
-    height: calc(100vh - 80px);
 }
 
 footer{
+    padding: 30px 0;
     background-color: #8F754F;
     color: #F5F0F6;
     text-align: center;
     font-size: 11px;
-    font-family: Arial;
-    padding: 30px 0;
+    font-family: "DM Sans", arial;
 }
 
 .center{
-    padding-bottom: 3%;
-    padding-top: 3%;
+   padding-bottom: 3%;
+   padding-top: 3%;
    position: absolute; 
-   top: 75%;
+   top: 86%;
    left: 50%;
    transform: translate(-50%, -50%);
    font-family: Verdana;
@@ -88,11 +108,12 @@ footer{
 }
 
 .center h1{
-    color:#F5F0F6;
-    font-size: 27px;
-    font-weight: bold;
     width: 500px;
+    color:#F5F0F6;
+    font-size: 26px;
+    font-weight: bold;
     text-align: center;
+    font-family: "42dot Sans";
 }
 
 .center .buttons{
@@ -103,6 +124,7 @@ footer{
     height: 50px;
     width: 139px; 
     font-size: 18px;
+    font-family: "DM Sans";
     color: #F5F0F6;
     background: #385f71;
     border: 1px solid #F5F0F6;

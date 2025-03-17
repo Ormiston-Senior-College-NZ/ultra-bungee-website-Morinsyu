@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Colors */
 :root {
     --indigodye: #2b4162;
     --magnolia: #F5F0F6;
@@ -11,8 +12,14 @@
     --ecru: #D7B377;
     --blue: #385f71;
 
+/* Added similar logo colors */
+    --salmon: #EF4644;
+    --mustardyellow: #e9b92b;
+    --vibrantpink: #EE286E;
+    --tangerine: #EC5C23;
+    --yellowish: #CCA52C;
 }
-
+/* Navigation & Homepage */
 * {
     margin: 0px;
     padding: 0px;
@@ -23,7 +30,7 @@
 nav {
     width: 100%;
     height: 75px;
-    background-color: #2b4162fd;
+    background-color: #2b4162;
     line-height: 75px;
     padding: 5px 100px;
     position: fixed;
@@ -49,13 +56,12 @@ nav ul li a{
     color: #F5F0F6;
     text-decoration: none;
     font-size: 18px;
-    text-transform: uppercase;
     padding: 0 25px;
-    font-family: "DM Sans";
+    font-family: "Arimo";
 }
 
 nav ul li a:hover {
-    color: #D7B377;
+    color: #e9b92b;
 }
 
 nav ul li .active {
@@ -63,9 +69,10 @@ nav ul li .active {
 }
 
 img {
-width: 100%;
-height: 155vh;
-background-size: cover;
+    width: 100%;
+    height: 125vh;
+    background-size: cover contain;
+    background-attachment: fixed;
 }
 
 .content-box {
@@ -79,16 +86,18 @@ background-size: cover;
     transform: translateY(-50%);
     text-align: center;
     color: #F5F0F6;
-    background-color: #2b4162d5;;
+    background-color: #2b4162e3;;
 }
 
 .content h1 {
+    text-align: center;
     font-size: 35px;
     margin-top: 80px;
     font-family: "42dot Sans";
 }
 
-button{
+/* Buttons */
+button {
     width: 200px;
     padding: 13px 0;
     text-align: center;
@@ -100,6 +109,7 @@ button{
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    font-size: 15px;
 }
 
 span {
@@ -115,13 +125,14 @@ span {
 }
 
 button:hover span {
-width: 100%;
+    width: 100%;
 }
 
 button:hover {
     border: none;
 }
 
+/* Bridge section  */
 .bridge {
     padding: 50px 0;
     text-align: center;
@@ -162,6 +173,7 @@ button:hover {
     padding-top: 5px;
 }
 
+/* Bridge information */
 .information {
     background-color: #2b4162;
     color: #F5F0F6;
@@ -195,6 +207,7 @@ button:hover {
     font-size: 17px;
 }
 
+/* Bridge gallery preview */
 .thrill {
     padding-top: 3%;
     text-align: center;
@@ -239,6 +252,7 @@ button:hover {
     text-align: center;
 }
 
+/* Canyon section */
 .canyon {
     padding: 50px 0;
     text-align: center;
@@ -279,6 +293,7 @@ button:hover {
     padding-top: 5px;
 }
 
+/* Canyon information */
 .canyon-information {
     background-color: #2b4162;
     color: #F5F0F6;
@@ -304,6 +319,7 @@ button:hover {
     font-size: 17px;
 }
 
+/* Tower section */
 .tower {
     padding: 30px 0;
     text-align: center;
@@ -344,6 +360,7 @@ button:hover {
     padding-top: 5px;
 }
 
+/* Tower information */
 .tower-information {
     background-color: #2b4162;
     color: #F5F0F6;
@@ -369,6 +386,7 @@ button:hover {
     font-size: 17px;
 }
 
+/* Footer */
 .footer {
     background-color: #EF4644;
     color: #F5F0F6;

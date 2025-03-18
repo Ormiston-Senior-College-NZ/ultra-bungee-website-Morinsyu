@@ -13,7 +13,7 @@
         <nav>
             <img class="hero-img" src="img/logo.png"/>
                 <ul>
-                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="index.html" class="active">HOME</a></li>
                     <li><a href="#bridge">BRIDGE</a></li>
                     <li><a href="#canyon">CANYON</a></li>
                     <li><a href="#tower">TOWER</a></li>
@@ -26,9 +26,15 @@
         <div class="content">
             <h1>Feel the fall with Ultra Bungee!</h1>
         <div>
+            <a href="#bridge">
             <button type="button"><span></span>Bridge Jump</button>
+            </a>
+            <a href="#canyon">
             <button type="button"><span></span>Canyon Jump</button>
+            </a>
+            <a href="#tower">
             <button type="butto"><nspan></span>Tower Jump</button>
+            </a>
         </div>
         </div>
     </section>
@@ -93,7 +99,9 @@
         <p>Click button bellow to view full images</p>
     </div>
         <div class="gallery-button">
+        <a href="gallery.html">
             <button type="button"><span></span>Gallery</button>
+        </a>
         </div>
     </section>
 <!--Canyon section-->
@@ -172,6 +180,18 @@
             <p>© Ultra Bungee 2021 - Website by Web Makers Inc</p>
         </footer>
     </section>
+    <script>
+        $('a[href*="#"]').on('click', function(e) {
+          e.preventDefault()
+          $('html, body').animate(
+            {
+       scrollTop: $($(this).attr('href')).offset().top,
+      },
+      500,
+      "linear"
+          );
+        });
+      </script>
     </body>
 </html>
 

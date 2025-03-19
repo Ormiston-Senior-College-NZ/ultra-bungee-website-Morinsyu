@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Navigation-->
+    <section class="navigation">
+        <nav>
+            <img class="hero-img" src="img/logo.png"/>
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="#bridge">BRIDGE</a></li>
+                    <li><a href="#canyon">CANYON</a></li>
+                    <li><a href="#tower">TOWER</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </ul>
+        </nav>
+    </section>
+    <section class="contact-us">
+        <div class="contact-us">
+        <h1>Contact Us</h1>
+<form>
+    <input type="text" placeholder="Your name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea>
+    <a href="index.html">
+        <button type="button"><span></span>Sent</button>
+</a>
+</form>
+    </div>
+    </section>
+    <section class="footer">
+        <footer>
+            <p>© Ultra Bungee 2021 - Website by Web Makers Inc</p>
+        </footer>
+    </section>
+    <script>
+        $('a[href*="#"]').on('click', function(e) {
+          e.preventDefault()
+          $('html, body').animate(
+            {
+       scrollTop: $($(this).attr('href')).offset().top,
+      },
+      500,
+      "linear"
+          );
+        });
+      </script>
+</body>
+</html>

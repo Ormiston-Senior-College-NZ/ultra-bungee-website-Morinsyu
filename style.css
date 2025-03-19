@@ -38,7 +38,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.514);
-    position: fixed;
 }
 
 .hero-img{
@@ -451,8 +450,8 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 5%;
+    margin-right: auto;
+    padding-bottom: 5%;
 }
 
 img:hover {
@@ -476,4 +475,40 @@ img:hover {
 .gallery-info p {
     font-family: "DM Sans";
     font-size: 17px;
+}
+
+/* Contact us & book page*/
+.contact-us {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2b4162;
+    border-radius: 10px;
+    border: #F5F0F6;
+    
+}
+
+.contact-us h1 {
+    margin-bottom: 20px;
+    color: #F5F0F6;
+    font-size: 40px;
+}
+
+form input,
+form textarea {
+display: block;
+width: 100%;
+margin-bottom: 10px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+background-color: #F5F0F6;
+color:#000;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #000;
 }
